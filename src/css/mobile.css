@@ -1,3 +1,5 @@
+/* Style pour mobile */
+
 @media all and (max-width: 450px) {
 
     body {
@@ -19,9 +21,13 @@
         flex-direction: row;
         justify-content: space-between;
 
-        padding: 1em;
+        padding: 2em;
     }
 
+    .carousel-container {
+      width: 100%;
+    }
+  
 
 
 

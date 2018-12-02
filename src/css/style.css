@@ -1,10 +1,12 @@
 /* général  */
-
+body {
+      font-family: 'Roboto';
+      font-size: 12px;
+}
 
 * {
   box-sizing: border-box;
-  font-family: 'Roboto';
-  font-size: 12px;
+
 }
 
 /* fonts */
@@ -51,5 +53,82 @@ ul li, ul li a {
     font-size: 16px;
 }
 
+/*over sur les liens de la nav */
+a:hover {
+
+    border-top: 4px solid #3BAED7;
+    cursor: pointer;
+    padding-top: 1em;
+}
 
 
+/* Style pour le carousel */
+#slideshow {
+    position: relative;
+    width: 1600px;
+    height: 550px;
+    padding: 15px;
+    margin: 0 auto 2em;
+}
+
+/* les dimensions de notre containeur */
+#slideshow .caroussel-container {
+    position: relative;
+    width: 1602px; /* la taille du container doit être plus grande que la taille des images pour avoir les deux images affichées */
+    height: 550px;
+    overflow: hidden;
+}
+
+/* espace pour la timeline */
+#slideshow .caroussel-container:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: " ";
+    width: 100%;
+    height: 1px;
+    background: #999;
+}
+
+/* le conteneur des slides */
+#slideshow .slider {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200%;
+    height: 550px;
+    animation: slider 20s infinite;
+}
+
+/* annulation des marges sur figure */
+#slideshow figure {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+/* fonction d'animation */
+@keyframes slider {
+
+  0% {
+      transform: translateX(0%);
+  }
+
+  20% {
+      transform: translateX(0%);
+  }
+
+  50% {
+      transform: translateX(-50%);
+  }
+
+   70% {
+      transform: translateX(-50%);
+  } 
+
+  100% {
+      transform: translateX(0%);
+  }
+
+}
