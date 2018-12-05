@@ -7,18 +7,20 @@
     <title>Webagency</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="src/css/normalize.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="src/css/style.css">
-    <link rel="stylesheet" type="text/css" media="screen and (max-width: 450px )" href="src/css/mobile.css" />
-    <link rel="stylesheet" type="text/css" media="screen and (max-width: 1024px )" href="src/css/mobile.css" />
+
+
 
 </head>
 
 <body>
     <header>
         <!-- le logo -->
-        <div class="header-logo">
+        <figure>
             <img class="header-thumb" src="src/images/logo.png" alt="logo de la webagency">
-        </div>
+        </figure>
         <!-- La nav -->
         <nav role="navigation" class="header-nav">
             <ul class="header-list">
@@ -29,28 +31,29 @@
             </ul>
         </nav>
     </header>
-    <!-- le carousel -->
-<section id="slideshow">
+    <!-- l'image à remplacer par le carousel -->
+    <section id="Acceuil">
+        <figure class="img-container">
+            <img class="image" src="src/images/bg1.jpg" alt="Une filette avec de la peinture pleins les mains">
+        </figure>
 
-    <div class="caroussel-container">
-        <div class="c_slider"></div>
-        <div class="slider">
-            <figure>
-                <img src="src/images/bg1.jpg" alt="" width="1600" height="550" />
-            </figure>
-            <figure>
-                <img src="src/images/bg2.jpg" alt="" width="1600" height="550" />
-            </figure>
+        <div class="slider-presentation">
+            <div class="slider-txt">
+                <h1 class="slider-title"> <span>Webagency</span> : l'agence de tous vos projets</h1>
+                <p class="slider-para">Vous avez un projet web ? La web agency vous aide à le réaliser !</p>
+            </div>
+            <button type="button" class="slider-btn">
+                <a href="#contact">Plus d'infos</a>
+            </button>
         </div>
-    </div>
+    </section>
 
-    <span id="timeline"></span>
-    
-    <a class="commands prev commands1" href="#sl_i4" title="Aller à la dernière slide">&lt;</a>
-
-    <a class="commands next commands1" href="#sl_i2" title="Aller à la 2ème slide">&gt;</a>
-
-</section>
+    <section id="services">
+            <h2 class="service-title">Nos services</h2>
+            <div class="blue-point">
+                <span class="line"><i class="fas fa-circle"></i></span>
+            </div>
+    </section>
 
 </body>
 

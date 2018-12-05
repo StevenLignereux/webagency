@@ -1,151 +1,188 @@
 /* général  */
+
 body {
-      font-family: 'Roboto';
-      font-size: 12px;
+    font-family: 'Roboto';
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
 }
 
 * {
-  box-sizing: border-box;
-
+    box-sizing: border-box;
 }
 
 /* fonts */
+
 @font-face {
     font-family: 'Roboto';
-    src: url("../fonts/Roboto-Regular.ttf"), url("../fonts/Roboto-Black.ttf");
-    font-weight:normal;
-    font-style:normal;
-    font-variant:normal;
+    src: url("../fonts/Roboto-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
 }
 
 @font-face {
-    font-family: 'Roboto-Bold';
-    src: url("../fonts/Roboto-Bold.ttf"), url("../fonts/Roboto-BoldItalic.ttf");
+    font-family: 'Roboto';
+    src: url("../fonts/Roboto-Bold.ttf");
     font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url("../fonts/Roboto-BoldItalic.ttf");
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+
+@font-face {
+    font-family: 'Roboto';
+    src: url("../fonts/Roboto-Italic.ttf");
+    font-style: italic;
     
 }
 
 @font-face {
-    font-family: 'Roboto-Italic';
-    src: url("../fonts/Roboto-BlackItalic.ttf"), url("../fonts/Roboto-Italic.ttf"), url("../fonts/Roboto-LightItalic.ttf");
-    font-style: italic;
+    font-family: 'Roboto';
+    src: url("../fonts/Roboto-Light.ttf"), url("../fonts/Roboto-LightItalic.ttf");
     font-weight: lighter;
+    font-style: italic;
 }
 
 @font-face {
-    font-family: 'Roboto-light';
-    src: url("../fonts/Roboto-Light.ttf"), url("../fonts/Roboto-LightItalic.ttf");
-    font-weight: lighter;
-    font-style: italic; 
-}
-@font-face {
-    font-family: 'Roboto-thin';
+    font-family: 'Roboto';
     src: url("../fonts/Roboto-Thin.ttf"), url("../fonts/Roboto-ThinItalic.ttf");
     font-weight: 100;
-    font-style: italic; 
+    font-style: italic;
 }
 
 /* header */
-ul li, ul li a {
+
+ul li,
+ul li a {
     list-style-type: none;
-    text-decoration: none;
     color: #B0B0B0;
     font-size: 16px;
 }
 
-/*over sur les liens de la nav */
-a:hover {
+/*hover sur les liens de la nav */
 
+ul li a:hover {
     border-top: 4px solid #3BAED7;
     cursor: pointer;
     padding-top: 1em;
 }
 
-
-/* Style pour le carousel */
-#slideshow {
-    position: relative;
-    width: 1600px;
-    height: 550px;
-    padding: 15px;
-    margin: 0 auto 2em;
+span {
+    color: #3BAED7;
 }
 
-/* les dimensions de notre containeur */
-#slideshow .caroussel-container {
-    position: relative;
-    width: 1602px; /* la taille du container doit être plus grande que la taille des images pour avoir les deux images affichées */
-    height: 550px;
-    overflow: hidden;
+a {
+    text-decoration: none;
 }
 
 
-/* le conteneur des slides */
-#slideshow .slider {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 200%;
-    height: 550px;
-    animation: slider 20s infinite;
+
+.blue-point {
+    display: flex;
+}
+i {
+    margin: 0 auto;
+    font-size: 15px;
 }
 
-/* annulation des marges sur figure */
-#slideshow figure {
-    position: relative;
-    display: inline-block;
-    padding: 0;
+/* Style pour mobile */
+
+
+header {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.header-nav .header-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+/* Style pour l'image à remplacer par le carousel */
+.img-container {
+    display: flex;
     margin: 0;
 }
 
-/* fonction d'animation */
-@keyframes slider {
+.image {
+    width: 100%;
+    height: 50%;
+    margin: 0 auto;
+    vertical-align: top;
+}
 
-  0% {
-      transform: translateX(0%);
-  }
+.slider-presentation {
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
 
-  20% {
-      transform: translateX(0%);
-  }
+}
 
-  50% {
-      transform: translateX(-50%);
-  }
+.slider-txt {
+    text-align: center;
 
-   70% {
-      transform: translateX(-50%);
-  } 
+}
 
-  100% {
-      transform: translateX(0%);
-  }
-  }
+.slider-title {
+    font-size: 3em;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.slider-para {
+    font-size: 2em;
+    font-weight: normal;
+}
+
+.slider-btn {
+    background-color: #5cadd3;
+    border-radius: 3px;
+    height: 50px;
+    width: 150px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+.slider-btn a {
+    color: #fff;
+    font-size: 2em;
+    font-weight: bolder;
+}
 
 
-  /*la timeline */
-  #timeline {
-      position: absolute;
-      background:#3BAED7;
-      left: 15px;
-      height: 5px;
-      background: rgb(59, 74, 215);
-      background: rgba(59, 74, 215, .8);
-      width: 0;
-      /* fonction d'animation */
-      animation: timeliner 20s infinite;
-  }
 
-@keyframes timeliner {
+.service-title {
+    font-weight: bold;
+    text-align: center;
+    font-size: 2em;
+    text-transform: uppercase;
+}
 
-    0%,
-    50%,
-    100% {
-        width: 0;
-    }
+.blue-point {
+    justify-content: center;
+}
 
-    20%,
-    90% {
-        width: 100%;
-    }
+.line {
+    width: 150px;
+    height: 1px;
+    border-top: solid 1px #B0B0B0;
+    text-align: center;
+    position: relative;
+    
+    
+}
+
+.line i {
+    position: absolute;
+   top: -7px;
 }
