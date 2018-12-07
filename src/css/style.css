@@ -74,7 +74,7 @@ ul li a:hover {
     padding-top: 1em;
 }
 
-span {
+.fas {
     color: #3BAED7;
 }
 
@@ -186,3 +186,46 @@ header {
     position: absolute;
    top: -7px;
 }
+
+.services-para {
+    text-align: center;
+    font-size: 16px;
+    margin: 10px;
+    margin-top: 25px;
+}
+
+h3 {
+    font-weight: bolder;
+    font-size: 2em;
+    text-align: center;
+}
+
+.services-block {
+       display: flex;
+       flex-direction: column;
+       margin: auto;
+       padding: 0 10px;
+}
+
+ .services-img {
+    display: none;
+    margin-top: 50px; 
+}
+
+.icones {
+        border: 1px solid rgba(204, 204, 204, 0.50);
+        border-radius: 50%;
+        padding: 20px;
+        height: 100px;
+        width: 100px;
+        text-align: center;
+        margin: 0 auto;
+        position: relative;
+        
+}
+
+.icones-circle {
+    position: absolute;
+    margin: 16px;
+}
+
