@@ -43,7 +43,7 @@ body {
 @font-face {
     font-family: 'Roboto';
     src: url("../fonts/Roboto-Light.ttf"), url("../fonts/Roboto-LightItalic.ttf");
-    font-weight: lighter;
+    font-weight: 100;
     font-style: italic;
 }
 
@@ -99,11 +99,12 @@ header {
     top: 0;
     margin: 0;
     position: fixed;
-    z-index: 2;
+/* Le z-index est ici à 10 car il est aussi utilisé pour les contrôles du slider d'où sa valeur forte */
+    z-index: 10;
 }
-
+/* Un margin-top pour gérer le menu fixe */
 #acceuil {
-    margin-top: 15em;
+    margin-top: 13em;
 }
 
 .header-nav .header-list {
@@ -114,20 +115,87 @@ header {
     position: sticky;
 }
 
-/* Style pour l'image à remplacer par le carousel */
+/* Le carousel */
 
-.img-container {
-    display: flex;
-    margin: 0;
+#i1,
+#i2 {
+    display: none;
 }
 
-.image {
+.container {
+    margin-top: 20px;
+    position: relative;
+    width: 70%;
+    height: 0;
+    padding-bottom: 40%;
     width: 100%;
-    height: 50%;
-    margin: 0 auto;
-    vertical-align: top;
-
 }
+
+.container .slide_img {
+    width: 100%;
+    position: absolute;
+}
+
+.container .slide_img img {
+    width: 100%;
+    height: 100%;
+    animation: slider 10s infinite;
+    overflow: hidden;
+}
+
+.prev,
+.next {
+    width: 50px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, .2);
+    color: rgba(244, 244, 244, .9);
+    z-index: 99;
+    cursor: pointer;
+    text-align: center;
+    transform: translateY(-50%);
+    /* Pour cacher les flèches en mode mobile */
+    display: none;
+}
+
+.next {
+    right: 0;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+.prev {
+    left: 0;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+label span {
+    position: absolute;
+    font-size: 65px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(88, 88, 89, .8);
+    color: #ffffff;
+}
+
+.slide_img {
+    z-index: -1;
+}
+
+
+
+#i1:checked~#one,
+#i2:checked~#two {
+    z-index: 9;
+}
+
 
 .slider-presentation {
     display: flex;
@@ -157,6 +225,9 @@ header {
     width: 150px;
     margin: 0 auto;
     margin-bottom: 25px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 2em;
 }
 
 .slider-btn a {
@@ -195,6 +266,7 @@ header {
     font-size: 16px;
     margin: 10px;
     margin-top: 25px;
+    margin-bottom: 50px;
 }
 
 h3 {
@@ -208,10 +280,11 @@ h3 {
     flex-direction: column;
     margin: auto;
     padding: 0 10px;
+    display: none;
 }
 
 .services-img {
-    display: none;
+    
     margin-top: 50px;
 }
 
@@ -250,3 +323,11 @@ h3 {
     background-color: rgb(229, 229, 229);
     border-radius: 5px;
 }
+
+.blue-carset {
+    margin: 0;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+}
+

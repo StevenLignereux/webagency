@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
+    
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Webagency</title>
@@ -22,7 +23,7 @@
             <img class="header-thumb" src="src/images/logo.png" alt="logo de la webagency">
         </figure>
         <!-- La nav -->
-        <nav role="navigation" class="header-nav">
+        <nav class="header-nav">
             <ul class="header-list">
                 <li><a class="nav-link" href="#">Acceuil</a></li>
                 <li><a class="nav-link" href="#">Services</a></li>
@@ -31,20 +32,35 @@
             </ul>
         </nav>
     </header>
-    <!-- l'image à remplacer par le carousel -->
     <section id="acceuil">
-        <figure class="img-container">
-            <img class="image" src="src/images/bg1.jpg" alt="Une filette avec de la peinture pleins les mains">
-        </figure>
+        <!-- le carousel -->
+        <div class="slider">
+            <div class="container">
+
+                <input type="radio" id="i1" name="images" checked />
+                <input type="radio" id="i2" name="images" />
+
+                <div class="slide_img" id="one">
+
+                    <img id="image1" src="src/images/bg1.jpg" alt="une filette avec les mains pleines de peinture">
+
+                    <label class="prev" for="i2"><span>&#x2039;</span></label>
+                    <label class="next" for="i2"><span>&#x203a;</span></label>
+                </div>
+                <div class="slide_img" id="two">
+                    <img src="src/images/bg2.jpg" alt="un garçon qui hurle dans un mégaphone">
+                    <label class="prev" for="i1"><span>&#x2039;</span></label>
+                    <label class="next" for="i1"><span>&#x203a;</span></label>
+                </div>
+            </div>
+        </div>
 
         <div class="slider-presentation">
             <div class="slider-txt">
                 <h1 class="slider-title"> <span>Webagency</span> : l'agence de tous vos projets</h1>
                 <p class="slider-para">Vous avez un projet web ? La web agency vous aide à le réaliser !</p>
             </div>
-            <button type="button" class="slider-btn">
-                <a href="#contact">Plus d'infos</a>
-            </button>
+            <button class="slider-btn" type="button">Plus d'infos </button>
         </div>
     </section>
 
@@ -100,23 +116,26 @@
         <div class="blue-point">
             <span class="line"><i class="fas fa-circle"></i></span>
         </div>
-        <p class="services-para">Ils nous ont fait confiance et ils ne l'ont pas regrettés, découvrez les sites internet de nos clients, réalisé par nos équipes. Vous aussi faîte nous confiance, vous ne le regretterez pas.</p>
+        <p class="services-para">Ils nous ont fait confiance et ils ne l'ont pas regrettés, découvrez les sites
+            internet de nos clients, réalisé par nos équipes. Vous aussi faîte nous confiance, vous ne le regretterez
+            pas.</p>
 
         <!-- Le système de filtre -->
-            <ul class="filtres-nav">
-                <li>
-                    <a href="#" class="filtres-link">All works</a>
-                </li>
-                <li>
-                    <a href="#" class="filtres-link">Creative</a>
-                </li>
-                <li>
-                    <a href="#" class="filtres-link">Corporate</a>
-                </li>
-                <li>
-                    <a href="#" class="filtres-link">Portfolio</a>
-                </li>
-            </ul>
+        <ul class="filtres-nav">
+            <li class="filtres-li">
+                <a href="#" class="filtres-link">All works</a>
+                <i class="fas fa-caret-down blue-carset fa-2x"></i>
+            </li>
+            <li class="filtres-li">
+                <a href="#" class="filtres-link">Creative</a>
+            </li>
+            <li class="filtres-li">
+                <a href="#" class="filtres-link">Corporate</a>
+            </li>
+            <li class="filtres-li">
+                <a href="#" class="filtres-link">Portfolio</a>
+            </li>
+        </ul>
     </section>
 
 </body>
