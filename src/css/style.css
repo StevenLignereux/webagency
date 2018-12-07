@@ -34,13 +34,10 @@ body {
     font-style: italic;
 }
 
-
-
 @font-face {
     font-family: 'Roboto';
     src: url("../fonts/Roboto-Italic.ttf");
     font-style: italic;
-    
 }
 
 @font-face {
@@ -68,7 +65,7 @@ ul li a {
 
 /*hover sur les liens de la nav */
 
-ul li a:hover {
+.nav-link:hover {
     border-top: 4px solid #3BAED7;
     cursor: pointer;
     padding-top: 1em;
@@ -82,18 +79,16 @@ a {
     text-decoration: none;
 }
 
-
-
 .blue-point {
     display: flex;
 }
+
 i {
     margin: 0 auto;
     font-size: 15px;
 }
 
 /* Style pour mobile */
-
 
 header {
     display: flex;
@@ -109,6 +104,7 @@ header {
 }
 
 /* Style pour l'image à remplacer par le carousel */
+
 .img-container {
     display: flex;
     margin: 0;
@@ -125,12 +121,10 @@ header {
     display: flex;
     flex-direction: column;
     background-color: #f5f5f5;
-
 }
 
 .slider-txt {
     text-align: center;
-
 }
 
 .slider-title {
@@ -159,13 +153,12 @@ header {
     font-weight: bolder;
 }
 
-
-
-.service-title {
+.section-title {
     font-weight: bold;
     text-align: center;
     font-size: 2em;
     text-transform: uppercase;
+    padding-top: 25px;
 }
 
 .blue-point {
@@ -178,13 +171,11 @@ header {
     border-top: solid 1px #B0B0B0;
     text-align: center;
     position: relative;
-    
-    
 }
 
 .line i {
     position: absolute;
-   top: -7px;
+    top: -7px;
 }
 
 .services-para {
@@ -201,27 +192,26 @@ h3 {
 }
 
 .services-block {
-       display: flex;
-       flex-direction: column;
-       margin: auto;
-       padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 0 10px;
 }
 
- .services-img {
+.services-img {
     display: none;
-    margin-top: 50px; 
+    margin-top: 50px;
 }
 
 .icones {
-        border: 1px solid rgba(204, 204, 204, 0.50);
-        border-radius: 50%;
-        padding: 20px;
-        height: 100px;
-        width: 100px;
-        text-align: center;
-        margin: 0 auto;
-        position: relative;
-        
+    border: 1px solid rgba(204, 204, 204, 0.50);
+    border-radius: 50%;
+    padding: 20px;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
 }
 
 .icones-circle {
@@ -229,3 +219,22 @@ h3 {
     margin: 16px;
 }
 
+#projets {
+    background-color: #f5f5f5;
+}
+
+.filtres-nav {
+    list-style-type: none;
+    justify-content: space-around;
+    display: flex;
+    margin: 50px 0;
+    padding: 0;
+    font-size: 75%;
+}
+
+.filtres-link {
+    text-decoration: none;
+    color: rgb(118, 121, 126);
+    background-color: rgb(229, 229, 229);
+    border-radius: 5px;
+}
