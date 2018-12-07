@@ -94,6 +94,16 @@ header {
     display: flex;
     text-align: center;
     flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    top: 0;
+    margin: 0;
+    position: fixed;
+    z-index: 2;
+}
+
+#acceuil {
+    margin-top: 15em;
 }
 
 .header-nav .header-list {
@@ -101,6 +111,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     padding: 1em;
+    position: sticky;
 }
 
 /* Style pour l'image à remplacer par le carousel */
@@ -115,6 +126,7 @@ header {
     height: 50%;
     margin: 0 auto;
     vertical-align: top;
+
 }
 
 .slider-presentation {
