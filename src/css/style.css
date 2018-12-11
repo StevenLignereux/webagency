@@ -384,10 +384,51 @@ figcaption {
  }
 
  /* On stylise l'icône pour qu'elle coresponde à la maquette */
- .eye {
+ /* .eye {
      width: 50px;
      height: 50px;
      border: 2px solid #fff;
      border-radius: 50%;
- }
+ } */
 
+ /* Style de l'iframe*/
+
+.carte {
+    /* on utilise une position relative pour placer notre iframe */
+    position: relative;
+    overflow: hidden;
+    /* Permet de garder la carte au bon ratio */
+    padding-top: 56.25%;
+}
+
+.contact-iframe {
+    position: absolute;
+    /*Pour positionner la carte au centre de son container*/
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.form-contact {
+    background-color: #f5f5f5;
+}
+
+.contact-title {
+    text-align: left;
+}
+
+.contact-para {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #000;
+}
+
+input {
+    width: 95%;
+    height: 25px;
+    margin: 15px 0;
+}
