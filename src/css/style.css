@@ -114,12 +114,15 @@ header {
     flex-direction: row;
     justify-content: space-between;
     padding: 1em;
-    position: sticky;
 }
 
 /* Le carousel */
 
 .slider {
+    display: none;
+}
+
+#i1, #i2 {
     display: none;
 }
 
@@ -274,8 +277,6 @@ h3 {
 }
 
 .services-block {
-    display: flex;
-    flex-direction: column;
     margin: auto;
     padding: 0 10px;
     display: none;
@@ -431,4 +432,45 @@ input {
     width: 95%;
     height: 25px;
     margin: 15px 0;
+}
+
+@media (min-width: 768px) {
+.header-nav .header-list {
+    justify-content: space-around;
+}
+
+}
+
+@media (min-width: 1024px) {
+    header {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .header-nav ul li {
+        margin: 0 30px;
+    }
+
+    .slider {
+        display: block;
+        position: relative;
+    }
+
+    .slider-presentation {
+        position: absolute;
+        top: 350px;
+        left: 150px;
+        z-index: 9;
+        background-color: transparent;
+        color: #fff;
+    }
+
+    .slider-title span {
+        color: #3BAED7;
+    }
+
+    .services-block {
+        display: initial;
+    }
+
 }
