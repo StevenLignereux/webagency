@@ -344,6 +344,11 @@ h3 {
     transform: translateX(-50%);
 }
 
+.projet-container {
+    display: flex;
+    flex-direction: column;
+}
+
 /* On met une width de 100% pour adapter la taille */
 .img-container {
     /* A défaut d'avoir une meilleur méthode j'utilise les position relatives et absolutes pour positioner ma légende. */
@@ -392,6 +397,13 @@ figcaption {
      border-radius: 50%;
  } */
 
+   .eye {
+       position: absolute;
+       top: 0;
+       right: 0;
+       transform: translate(-50%, -50%);
+   }
+
  /* Style de l'iframe*/
 
 .carte {
@@ -439,6 +451,15 @@ input {
     justify-content: space-around;
 }
 
+.projet-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ .img-container {
+     width: calc(50% - 80px);
+ }
+
 }
 
 @media (min-width: 1024px) {
@@ -472,5 +493,8 @@ input {
     .services-block {
         display: initial;
     }
+
+   
+ 
 
 }

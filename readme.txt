@@ -19,3 +19,13 @@
 ##### Metre un text-align center sur le header et virer le flex et la div header-logo
 
 #### Mettre un flex sur le header qui va permettre de positionner tous les éléments
+
+#### Mettre du padding sur le formulaire de contact 
+
+#### padding: 30px 20%; permùet de centrer le formulaire , les longueurs des fields sont à ajuster 
+
+### Regarder le z-index du slider et la hauteur 
+
+### positionner le point bleu en dessous du texte 
+
+### Voir la nav transparante 
