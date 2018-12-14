@@ -22,7 +22,7 @@
 
 #### Mettre du padding sur le formulaire de contact 
 
-#### padding: 30px 20%; permùet de centrer le formulaire , les longueurs des fields sont à ajuster 
+#### padding: 30px 20%; permet de centrer le formulaire , les longueurs des fields sont à ajuster 
 
 ### Regarder le z-index du slider et la hauteur 
 
