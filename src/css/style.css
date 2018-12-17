@@ -122,7 +122,8 @@ header {
     display: none;
 }
 
-#i1, #i2 {
+#i1,
+#i2 {
     display: none;
 }
 
@@ -131,7 +132,7 @@ header {
     position: relative;
     width: 70%;
     height: 0;
-    padding-bottom: 40%;
+    padding-bottom: 35%;
     width: 100%;
 }
 
@@ -220,7 +221,7 @@ label span {
     font-weight: normal;
 }
 
-.slider-btn {
+.btn {
     background-color: #5cadd3;
     border-radius: 3px;
     height: 50px;
@@ -229,7 +230,7 @@ label span {
     margin-bottom: 25px;
     color: #fff;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 1em;
 }
 
 .slider-btn a {
@@ -241,7 +242,7 @@ label span {
 .section-title {
     font-weight: bold;
     text-align: center;
-    font-size: 2em;
+    font-size: 3em;
     text-transform: uppercase;
     padding-top: 25px;
 }
@@ -268,7 +269,7 @@ label span {
     font-size: 16px;
     margin: 10px;
     margin-top: 25px;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
 }
 
 h3 {
@@ -281,10 +282,6 @@ h3 {
     margin: auto;
     padding: 0 10px;
     display: none;
-}
-
-.services-img {
-    margin-top: 50px;
 }
 
 .icones {
@@ -354,6 +351,7 @@ h3 {
 }
 
 /* On met une width de 100% pour adapter la taille */
+
 .img-container {
     /* A défaut d'avoir une meilleur méthode j'utilise les position relatives et absolutes pour positioner ma légende. */
     position: relative;
@@ -364,18 +362,18 @@ h3 {
 }
 
 figcaption {
-        background-color: rgba(0, 0, 0, 0.6);
-        color: white;
-        position: absolute;
-        bottom: 0px;
-        visibility: hidden; 
-        width: 100%;  
-        height: 75px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    visibility: hidden;
+    width: 100%;
+    height: 75px;
 }
 
 .legende-title {
     font-size: 20px;
-    font-weight: bolder; 
+    font-weight: bolder;
     text-align: left;
     /* Le h3 semble avoir des marges par défaut */
     margin: 0;
@@ -386,36 +384,38 @@ figcaption {
     font-size: 16px;
     text-align: left;
     margin-left: 5px;
-    
 }
 
- .img-container:hover figcaption {
+.img-container:hover figcaption {
     visibility: visible;
- }
+}
 
- /* On stylise l'icône pour qu'elle coresponde à la maquette */
- /* .eye {
-     width: 50px;
-     height: 50px;
-     border: 2px solid #fff;
-     border-radius: 50%;
- } */
+/* On stylise l'icône pour qu'elle coresponde à la maquette */
 
-   .eye {
-       position: absolute;
-       top: 0;
-       right: 0;
-       transform: translate(-50%, -50%);
-   }
 
- /* Style de l'iframe*/
+.eye {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background-color: #3BAED7;
+    border-radius: 50%;
+    padding: 10px;
+    border: 1px solid #fff;
+
+}
+
+/* Style de l'iframe*/
 
 .carte {
     /* on utilise une position relative pour placer notre iframe */
     position: relative;
     overflow: hidden;
     /* Permet de garder la carte au bon ratio */
-    padding-top: 56.25%;
+    padding-top: 100%;
+    background-color: #3BAED7;
+    opacity: 1;
 }
 
 .contact-iframe {
@@ -423,7 +423,6 @@ figcaption {
     /*Pour positionner la carte au centre de son container*/
     top: 0;
     left: 0;
-
     width: 100%;
     height: 100%;
     border: 0;
@@ -431,10 +430,10 @@ figcaption {
 
 .form-contact {
     background-color: #f5f5f5;
-    padding: 30px 20%; /* va centrer le formulaire */
+    padding: 30px 20%;
+    /* va centrer le formulaire */
     text-align: center;
 }
-
 
 .contact-para {
     margin: 0;
@@ -442,7 +441,9 @@ figcaption {
     font-size: 14px;
     color: #000;
 }
-/* je cible els input car ce sont les seuls dans l'intégration */
+
+/* je cible les input car ce sont les seuls dans l'intégration */
+
 input {
     width: 95%;
     height: 25px;
@@ -454,49 +455,39 @@ textarea {
 }
 
 @media (min-width: 768px) {
-.header-nav .header-list {
-    justify-content: space-around;
-}
-
-.projet-container {
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
- .img-container {
-     width: calc(50% - 80px);
- }
-
- input {
-    width: 63%;
- }
-
- textarea {
-     width: 63%;
- }
-
+    .header-nav .header-list {
+        justify-content: space-around;
+    }
+    .projet-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .img-container {
+        width: calc(50% - 80px);
+    }
+    input {
+        width: 63%;
+    }
+    textarea {
+        width: 63%;
+    }
 }
 
 @media (min-width: 1024px) {
     header {
         flex-direction: row;
         justify-content: space-around;
-        
     }
-
     .header-nav ul li {
         margin: 0 30px;
     }
-
     .nav-link:hover {
         padding-top: 30px;
     }
-
     .slider {
         display: block;
         /* position: relative; */
     }
-
     .slider-presentation {
         position: absolute;
         top: 60%;
@@ -506,65 +497,83 @@ textarea {
         color: #fff;
         font-size: 10px;
     }
-
     .slider-title {
         font-size: 4em;
         text-align: left;
         margin: 15px 0;
         padding: 0 110px;
     }
-
     .slider-para {
         text-align: left;
         margin-left: 110px;
     }
-
     .slider-title span {
         color: #3BAED7;
     }
-
     .slider-btn {
         margin: 10px 110px;
     }
-
     .services-container {
         display: flex;
         margin: 0 10%;
-
     }
-
     .services-block {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 50%;
-    }
-
-    .services-contents {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 0;
         width: 50%;
     }
-
-    .services-content {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
+    .services-contents {
+        width: 50%;
+        padding: 5% 0;
     }
-
+    .services-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
     .services-txt {
         flex-direction: row;
+        text-align: left;
     }
-
+    .services-para-icones {
+        text-align: left;
+        font-size: 16px;
+    }
+    .icones {
+        margin: 0 30px;
+    }
     .icones-circle {
         position: absolute;
         top: 50%;
         left: 100%;
         transform: translate(-50%, -50%);
     }
-
-
-    
-
-   
- 
-
+    .section-title {
+        font-size: 4em;
+    }
+    h3 {
+        text-align: center;
+    }
+    /*Partie portfolio*/
+    .img-container {
+        width: calc(30% - 172px);
+    }
+    .projet-container {
+        padding: 40px;
+    }
+    /*formulaire de contact*/
+    #contact {
+        position: relative;
+    }
+    .form-contact {
+        position: absolute;
+        top: 50px;
+        right: 70px;
+        width: 45%;
+        height: 30%;
+        background-color: #f5f5f5;
+        padding: 40px 17%;
+    }
 }
