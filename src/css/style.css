@@ -212,6 +212,7 @@ label span {
     font-size: 3em;
     font-weight: bolder;
     text-transform: uppercase;
+    margin: 50px 0;
 }
 
 .slider-para {
@@ -290,17 +291,20 @@ h3 {
     border: 1px solid rgba(204, 204, 204, 0.50);
     border-radius: 50%;
     padding: 20px;
-    height: 100px;
-    width: 100px;
-    text-align: center;
-    margin: 0 auto;
     position: relative;
+    /* la width est là pour éviter de casser le design en mobile*/
+    width: 100px;
+    margin: 0 auto;
+}
+
+.icones i {
+    padding: 0 5px;
 }
 
 .icones-circle {
     position: absolute;
-    top: 50%;
-    left: 100%;
+    top: 100%;
+    left: 50%;
     transform: translate(-50%, -50%);
 }
 
@@ -503,9 +507,42 @@ textarea {
         color: #3BAED7;
     }
 
-    .services-block {
-        display: initial;
+    .services-container {
+        display: flex;
+        margin: 0 10%;
+
     }
+
+    .services-block {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+    }
+
+    .services-contents {
+        width: 50%;
+    }
+
+    .services-content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+    }
+
+    .services-txt {
+        flex-direction: row;
+    }
+
+    .icones-circle {
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        transform: translate(-50%, -50%);
+    }
+
+
+    
 
    
  
