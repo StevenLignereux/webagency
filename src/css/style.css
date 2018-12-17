@@ -8,7 +8,8 @@ body {
 }
 
 * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 /* fonts */
@@ -80,6 +81,8 @@ a {
 }
 
 .blue-point {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -91,9 +94,14 @@ i {
 /* Style pour mobile */
 
 header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     text-align: center;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     background-color: #fff;
     width: 100%;
     top: 0;
@@ -110,9 +118,16 @@ header {
 }
 
 .header-nav .header-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 1em;
 }
 
@@ -144,7 +159,8 @@ header {
 .container .slide_img img {
     width: 100%;
     height: 100%;
-    animation: slider 10s infinite;
+    -webkit-animation: slider 10s infinite;
+            animation: slider 10s infinite;
     overflow: hidden;
 }
 
@@ -159,7 +175,8 @@ header {
     z-index: 0;
     cursor: pointer;
     text-align: center;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
     /* Pour cacher les flèches en mode mobile */
     /* display: none; */
 }
@@ -181,7 +198,8 @@ label span {
     font-size: 65px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
 }
 
 .prev:hover,
@@ -200,8 +218,13 @@ label span {
 }
 
 .slider-presentation {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     background-color: #f5f5f5;
 }
 
@@ -248,7 +271,9 @@ label span {
 }
 
 .blue-point {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .line {
@@ -261,7 +286,8 @@ label span {
 
 .line i {
     position: absolute;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
 }
 
 .services-para {
@@ -302,7 +328,8 @@ h3 {
     position: absolute;
     top: 100%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
 }
 
 #projets {
@@ -310,7 +337,11 @@ h3 {
 }
 
 .filtres-nav {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 50px 0;
     padding: 0;
@@ -342,12 +373,18 @@ h3 {
     position: absolute;
     top: 100%;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
 }
 
 .projet-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 /* On met une width de 100% pour adapter la taille */
@@ -396,7 +433,8 @@ figcaption {
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     color: #fff;
     background-color: #3BAED7;
     border-radius: 50%;
@@ -454,11 +492,16 @@ textarea {
 
 @media (min-width: 768px) {
     .header-nav .header-list {
-        justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     }
     .projet-container {
-        flex-direction: row;
-        flex-wrap: wrap;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
     .img-container {
         width: calc(50% - 80px);
@@ -473,8 +516,12 @@ textarea {
 
 @media (min-width: 1024px) {
     header {
-        flex-direction: row;
-        justify-content: space-around;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     }
     .header-nav ul li {
         margin: 0 30px;
@@ -489,7 +536,8 @@ textarea {
     .slider-presentation {
         position: absolute;
         top: 60%;
-        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
         z-index: 9;
         background-color: transparent;
         color: #fff;
@@ -512,13 +560,21 @@ textarea {
         margin: 10px 110px;
     }
     .services-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         margin: 0 10%;
     }
     .services-block {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: flex-start;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
         margin: 0;
         width: 50%;
     }
@@ -527,12 +583,22 @@ textarea {
         padding: 5% 0;
     }
     .services-content {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row;
-        align-items: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     .services-txt {
-        flex-direction: row;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
         text-align: left;
     }
     .services-para-icones {
@@ -546,7 +612,8 @@ textarea {
         position: absolute;
         top: 50%;
         left: 100%;
-        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
     }
     .section-title {
         font-size: 4em;
