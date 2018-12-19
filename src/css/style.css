@@ -477,21 +477,20 @@ figcaption {
     color: #000;
 }
 
-#btn-form {
+.form-contact button{
+    width: 100%;
     height: 60px;
 }
 
 /* je cible les input car ce sont les seuls dans l'intégration */
 
-input {
-    width: 95%;
+input, textarea {
+    width: 100%;
     height: 25px;
     margin: 15px 0;
 }
 
-textarea {
-    width: 95%;
-}
+
 
 @media (min-width: 768px) {
     .header-nav .header-list {
@@ -509,12 +508,8 @@ textarea {
     .img-container {
         width: calc(50% - 80px);
     }
-    input {
-        width: 63%;
-    }
-    textarea {
-        width: 63%;
-    }
+  
+ 
 }
 
 @media (min-width: 1024px) {
@@ -528,7 +523,7 @@ textarea {
     }
 
     .logo-container {
-        margin: 12px;
+        margin: 12px 0;
     }
 
     .nav-li {
@@ -572,7 +567,7 @@ textarea {
         color: #3BAED7;
     }
     .btn {
-        margin: 10px 110px;
+        margin: 20px 12%;
     }
     .services-container {
         display: -webkit-box;
@@ -643,10 +638,35 @@ textarea {
     .projet-container {
         padding: 40px;
     }
+
+    .img-legende {
+        height: 60%;
+    }
+
+    .legende-title {
+        font-size: 16px;
+        margin: 0 15px;
+    }
+
+    .legende-para {
+        font-size: 14px;
+    }
+
+    .eye {
+        padding: 3px;
+    }
+
+    .legende-para {
+        font-size: 12px;
+        text-align: left;
+        margin-left: 5px;
+    }
+
     /*formulaire de contact*/
     #contact {
         position: relative;
     }
+    
     .form-contact {
         position: absolute;
         top: 50px;
@@ -658,8 +678,41 @@ textarea {
         text-align: left;
     }
 
-    #btn-form {
-        margin:  10px 0;
+    .form-contact button {
+        width: 100%;
+        margin: 10px 0;
+    }
+    @media (min-width: 1440px) {
+        .logo-container {
+            margin: 12px -20%;
+        }
+
+        .img-legende {
+            height: 50%;
+        }
+
+        .legende-title {
+            font-size: 36px;
+        }
+
+        .legende-para {
+            font-size: 20px;
+            margin: 0 15px;
+        }
+
+        .eye {
+            padding: 10px;
+        }
+
+        .form-contact {
+            height: 30%;
+            width: 20%;
+        }
+
+        .form-contact button.btn {
+            width: 100%;
+            height: 60px;
+        }
     }
 
     
