@@ -108,7 +108,7 @@ header {
     margin: 0;
     position: fixed;
     /* Le z-index est ici à 10 car il est aussi utilisé pour les contrôles du slider d'où sa valeur forte */
-    z-index: 12;
+    z-index: 13;
 }
 
 /* Un margin-top pour gérer le menu fixe */
@@ -526,8 +526,13 @@ textarea {
         -ms-flex-pack: distribute;
             justify-content: space-around;
     }
-    .header-nav ul li {
-        margin: 0 30px;
+
+    .logo-container {
+        margin: 12px;
+    }
+
+    .nav-li {
+        margin: 10px;
     }
 
    
@@ -553,10 +558,11 @@ textarea {
         font-size: 10px;
     }
     .slider-title {
-        font-size: 4em;
-        text-align: left;
-        margin: 15px 0;
-        padding: 0 110px;
+    font-size: 3em;
+    text-align: left;
+    margin: 15px 0;
+    /* Le padding est là pour ne pas géner le contrôle */
+    padding: 0 62px 0 105px;
     }
     .slider-para {
         text-align: left;
@@ -645,8 +651,8 @@ textarea {
         position: absolute;
         top: 50px;
         right: 70px;
-        width: 30%;
-        height: 30%;
+        width: 40%;
+        height: 55%;
         background-color: #f5f5f5;
         padding: 20px 5%;
         text-align: left;
